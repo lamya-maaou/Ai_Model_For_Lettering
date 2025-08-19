@@ -1,0 +1,36 @@
+-- Script d'insertion pour Oracle DB
+-- Dataset Comptable Synthétique
+-- Généré le 23/07/2025 10:48:44
+
+-- Insertion des statuts de facture
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('DRAFT', 'Brouillon');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('SENT', 'Envoyée');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('PAID', 'Payée');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('UNPAID', 'Impayée');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('OVERDUE', 'En retard');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('CANCELLED', 'Annulée');
+INSERT INTO INVOICE_STATUSES (STATUS_CODE, DESCRIPTION) VALUES ('PARTIAL', 'Partiellement payée');
+
+-- Les autres insertions peuvent être effectuées via:
+-- 1. SQL*Loader avec les fichiers CSV générés
+-- 2. Import/Export Oracle
+-- 3. Scripts d'insertion générés automatiquement
+
+-- Exemple de structure d'insertion pour INVOICES:
+/*
+INSERT INTO INVOICES (
+    CLIENT_ID, INVOICE_DATE, PAYMENT_DATE, TOTAL_HT, STATUS,
+    INVOICE_NUMBER, INVOICE_YEAR, PO, PU, QUANTITY,
+    AMOUNT_TTC, RAS_5P, RAS_TVA, AMOUNT_TO_PAY,
+    ELECTRONIC_DATE, PHYSICAL_DATE, EXPECTED_PAYMENT_DATE,
+    LABEL, CLIENT_TYPE, MONTANT_TVA
+) VALUES (
+    222, DATE '2025-07-22', NULL, 6000.22, 'UNPAID',
+    'FACT-2025-000001', 2025, NULL, 166.67, 36,
+    6330.23, 0.0, 0.0, 6330.23,
+    DATE '2025-07-22', DATE '2025-07-25', DATE '2025-08-24',
+    'Prestation L''avantage de changer avant-tout', 'PRIVATE', 330.01
+);
+*/
+
+COMMIT;

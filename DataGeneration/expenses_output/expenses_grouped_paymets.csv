@@ -1,0 +1,251 @@
+expense_id,title,amount,label,comments,expense_date,type,category,expense_number,status
+1,Téléphonie entreprise,1045.93,SERVICES_UTILITAIRES,Frais climatisation et chauffage,2025-07-03,mensuel,Services_Publiques,EXP202500001,paid
+2,Écran de travail,1370.98,INVESTISSEMENT_INFRA,Renouvellement matériel IT,2024-12-28,annuel,Équipement,EXP202400002,paid
+3,Célébration annuelle,1700.68,ACTIVITÉ_EQUIPE,Déjeuner mensuel du personnel,2024-12-23,divers,Divertissement,EXP202400003,paid
+4,Microsoft 365,94.93,PLATEFORME_SAAS,Outil vidéo pour réunions clients,2025-07-13,mensuel,Abonnements,EXP202500004,paid
+5,BambooHR,799.27,LOGICIEL_RH,Plateforme recrutement,2025-05-25,mensuel,Outils_RH,EXP202500005,paid
+6,Équipement réseau,7364.6,INVESTISSEMENT_INFRA,Infrastructure réseau,2024-10-09,annuel,Équipement,EXP202400006,paid
+7,GitHub Entreprise,364.16,ABONNEMENT_LOGICIEL,Plateforme collaborative équipes à distance,2025-03-07,mensuel,Abonnements,EXP202500007,paid
+8,Licence Salesforce,24666.79,SUITE_LOGICIELLE,CRM pour suivi ventes,2025-01-05,annuel,Licences_Logicielles,EXP202500008,paid
+9,Abonnement Internet,870.7,SERVICES_UTILITAIRES,Internet professionnel haut débit,2025-06-13,mensuel,Services_Publiques,EXP202500009,paid
+10,Services Azure,1136.81,HÉBERGEMENT_CLOUD,Hébergement scalable,2025-02-22,mensuel,Services_Cloud,EXP202500010,paid
+11,Transfert international,234.63,FRAIS_BANQUE,Change devises,2025-06-15,mensuel,Frais_Bancaires,EXP202500011,paid
+12,Chauffage bureau,1107.14,SERVICES_UTILITAIRES,Internet professionnel haut débit,2025-02-08,mensuel,Services_Publiques,EXP202500012,paid
+13,Power BI Pro,3941.3,LOGICIEL_PRO,CRM pour suivi ventes,2024-09-15,trimestriel,Licences_Logicielles,EXP202400013,paid
+14,Microsoft 365,463.98,ABONNEMENT_LOGICIEL,Licences utilisateurs productivité,2024-11-08,mensuel,Abonnements,EXP202400014,paid
+15,Téléphonie entreprise,1241.9,TÉLÉCOM,Frais climatisation et chauffage,2025-03-10,mensuel,Services_Publiques,EXP202500015,paid
+16,Frais de transaction,996.27,FRAIS_BANQUE,Services carte entreprise,2024-10-22,mensuel,Frais_Bancaires,EXP202400016,paid
+17,Frais tenue de compte,763.87,FRAIS_BANQUE,Commission transfert,2025-05-04,mensuel,Frais_Bancaires,EXP202500017,paid
+18,Zoom Pro,548.95,OUTILS_NUMÉRIQUES,Plateforme collaborative équipes à distance,2024-10-02,mensuel,Abonnements,EXP202400018,paid
+19,Conseil RH,8088.49,AVIS_PRO,Expertise technique,2024-11-19,divers,Conseil,EXP202400019,paid
+20,Abonnement Internet,1023.6,SERVICES_UTILITAIRES,Internet professionnel haut débit,2024-09-24,mensuel,Services_Publiques,EXP202400020,unpaid
+21,Workday,1136.9,OUTILS_RECRUTEMENT,Outil évaluation performance,2024-09-04,mensuel,Outils_RH,EXP202400021,unpaid
+22,Cloudflare,1701.25,HÉBERGEMENT_CLOUD,Sécurité des données,2025-02-16,mensuel,Services_Cloud,EXP202500022,paid
+23,Licence Windows Server,4127.42,LICENCE_ENTREPRISE,Outils décisionnels,2024-12-29,annuel,Licences_Logicielles,EXP202400023,paid
+24,Chauffage bureau,1080.99,TÉLÉCOM,Internet professionnel haut débit,2025-04-09,mensuel,Services_Publiques,EXP202500024,paid
+25,Facture électricité,261.64,SERVICES_UTILITAIRES,Frais climatisation et chauffage,2024-08-06,mensuel,Services_Publiques,EXP202400025,paid
+26,Mise à niveau système,681.82,CONTRAT_ENTRETIEN,Maintenance préventive,2024-10-24,divers,Maintenance,EXP202400026,paid
+27,Équipement réseau,3103.24,INVESTISSEMENT_INFRA,Infrastructure réseau,2024-12-04,annuel,Équipement,EXP202400027,paid
+28,Assurance cybersécurité,9477.54,COUVERTURE_PRO,Assurance bureau,2024-12-02,annuel,Assurances,EXP202400028,paid
+29,DigitalOcean,1530.58,INFRA_SAAS,Hébergement scalable,2025-06-06,mensuel,Services_Cloud,EXP202500029,paid
+30,Abonnement Internet,597.49,TÉLÉCOM,Facture électricité bureau Casablanca,2025-02-08,mensuel,Services_Publiques,EXP202500030,paid
+31,Power BI Pro,2536.73,LOGICIEL_PRO,CRM pour suivi ventes,2024-11-14,trimestriel,Licences_Logicielles,EXP202400031,paid
+32,Équipement réseau,6011.27,INVESTISSEMENT_INFRA,Renouvellement matériel IT,2025-07-14,annuel,Équipement,EXP202500032,paid
+33,Licence Windows Server,15775.56,SUITE_LOGICIELLE,Outils décisionnels,2024-09-04,annuel,Licences_Logicielles,EXP202400033,paid
+34,Licence Salesforce,15236.56,SUITE_LOGICIELLE,Base données projets clients,2025-06-13,annuel,Licences_Logicielles,EXP202500034,paid
+35,Facture eau,223.6,FRAIS_BUREAU,Frais climatisation et chauffage,2025-07-08,mensuel,Services_Publiques,EXP202500035,paid
+36,Power BI Pro,18720.78,LICENCE_ENTREPRISE,Outils décisionnels,2024-10-16,annuel,Licences_Logicielles,EXP202400036,paid
+37,Équipement réseau,1614.23,ACHAT_ÉQUIPEMENT,Mobilier ergonomique,2025-05-24,divers,Équipement,EXP202500037,paid
+38,Power BI Pro,5331.8,PLATEFORME_TECHNIQUE,Base données projets clients,2025-04-26,trimestriel,Licences_Logicielles,EXP202500038,paid
+39,Frais de transaction,651.27,FRAIS_BANQUE,Commission transfert,2024-10-13,mensuel,Frais_Bancaires,EXP202400039,paid
+40,Achat ordinateur,3597.18,INVESTISSEMENT_INFRA,Écrans HD,2024-09-19,annuel,Équipement,EXP202400040,paid
+41,Déplacement conférence,826.54,CONFÉRENCE_PRO,Formation/conférence,2025-05-05,divers,Déplacements,EXP202500041,paid
+42,Déjeuner d’équipe,751.74,ÉVÉNEMENT_ENTREPRISE,Activité d’équipe pour renforcer la cohésion,2025-07-08,divers,Divertissement,EXP202500042,paid
+43,LinkedIn Recruiter,393.47,LOGICIEL_RH,Système RH intégré,2024-10-16,mensuel,Outils_RH,EXP202400043,paid
+44,Abonnement Internet,859.36,TÉLÉCOM,Téléphonie équipe interne,2024-09-04,mensuel,Services_Publiques,EXP202400044,paid
+45,Matériel d’impression,1706.46,INVESTISSEMENT_INFRA,Renouvellement matériel IT,2025-03-21,annuel,Équipement,EXP202500045,paid
+46,GitHub Entreprise,215.46,PLATEFORME_SAAS,Plateforme collaborative équipes à distance,2024-11-02,mensuel,Abonnements,EXP202400046,paid
+47,Révision contrat,3349.78,AUDIT_CONFORMITÉ,Appui réglementaire,2025-02-14,trimestriel,Juridique_Conformité,EXP202500047,paid
+48,Slack Premium,291.68,ABONNEMENT_LOGICIEL,Licences utilisateurs productivité,2025-06-26,mensuel,Abonnements,EXP202500048,paid
+49,Facture eau,1432.89,SERVICES_UTILITAIRES,Internet professionnel haut débit,2024-10-01,mensuel,Services_Publiques,EXP202400049,paid
+50,Slack Premium,179.46,OUTILS_NUMÉRIQUES,Suite créative marketing,2025-02-14,mensuel,Abonnements,EXP202500050,paid
+51,Marketing Facebook,3765.1,FORFAIT_SEO,SEO visibilité web,2025-05-02,trimestriel,Marketing,EXP202500051,paid
+52,BambooHR,544.55,LOGICIEL_RH,Plateforme recrutement,2025-06-08,mensuel,Outils_RH,EXP202500052,unpaid
+53,Achat ordinateur,4499.04,ACHAT_ÉQUIPEMENT,Renouvellement matériel IT,2025-01-26,divers,Équipement,EXP202500053,paid
+54,Dîner client,565.51,ACTIVITÉ_EQUIPE,Événement interne trimestriel,2025-06-03,divers,Divertissement,EXP202500054,paid
+55,GitHub Entreprise,449.9,PLATEFORME_SAAS,Licences utilisateurs productivité,2024-12-19,mensuel,Abonnements,EXP202400055,paid
+56,Hébergement AWS,662.39,HÉBERGEMENT_CLOUD,Cloud computing développement produit,2024-12-04,mensuel,Services_Cloud,EXP202400056,paid
+57,Licence Salesforce,10798.22,LICENCE_ENTREPRISE,Licence serveur IT,2025-01-04,annuel,Licences_Logicielles,EXP202500057,paid
+58,Audit de conformité,3171.45,AUDIT_CONFORMITÉ,Conseil contrats,2025-02-25,trimestriel,Juridique_Conformité,EXP202500058,paid
+59,BambooHR,197.74,OUTILS_RECRUTEMENT,Outil évaluation performance,2025-02-27,mensuel,Outils_RH,EXP202500059,paid
+60,Adobe Creative Cloud,324.03,ABONNEMENT_LOGICIEL,Suite créative marketing,2025-07-05,mensuel,Abonnements,EXP202500060,paid
+61,Hébergement AWS,861.92,INFRA_SAAS,Développement agile,2025-05-30,mensuel,Services_Cloud,EXP202500061,paid
+62,Licence Salesforce,5337.57,PLATEFORME_TECHNIQUE,Licence serveur IT,2025-03-18,trimestriel,Licences_Logicielles,EXP202500062,paid
+63,Mise en conformité RGPD,3649.43,AUDIT_CONFORMITÉ,Revue gouvernance,2025-06-03,trimestriel,Juridique_Conformité,EXP202500063,paid
+64,Consultation juridique,9698.31,PROGRAMME_CONFORMITÉ,Revue gouvernance,2024-09-25,annuel,Juridique_Conformité,EXP202400064,paid
+65,Consultation juridique,3878.38,AUDIT_CONFORMITÉ,Audit conformité RGPD,2025-07-05,trimestriel,Juridique_Conformité,EXP202500065,paid
+66,Frais de change,499.34,FRAIS_BANQUE,Change devises,2025-05-28,mensuel,Frais_Bancaires,EXP202500066,paid
+67,Frais de transaction,269.61,FRAIS_BANQUE,Services carte entreprise,2025-03-06,mensuel,Frais_Bancaires,EXP202500067,unpaid
+68,Chaise ergonomique,1647.11,INVESTISSEMENT_INFRA,Écrans HD,2025-05-10,annuel,Équipement,EXP202500068,paid
+69,Power BI Pro,1150.85,PLATEFORME_TECHNIQUE,Outils décisionnels,2024-09-05,trimestriel,Licences_Logicielles,EXP202400069,paid
+70,Cloudflare,1640.01,HÉBERGEMENT_CLOUD,Hébergement scalable,2024-10-11,mensuel,Services_Cloud,EXP202400070,paid
+71,Audit de conformité,3041.04,AUDIT_CONFORMITÉ,Revue gouvernance,2025-01-02,trimestriel,Juridique_Conformité,EXP202500071,paid
+72,Licence Windows Server,12125.58,LICENCE_ENTREPRISE,Licence serveur IT,2025-05-11,annuel,Licences_Logicielles,EXP202500072,paid
+73,Outil Performance,603.25,LOGICIEL_RH,Formation continue en ligne,2024-12-07,mensuel,Outils_RH,EXP202400073,paid
+74,Facture électricité,1156.57,FRAIS_BUREAU,Frais climatisation et chauffage,2025-06-16,mensuel,Services_Publiques,EXP202500074,paid
+75,Assistance IT,2329.93,CONTRAT_ENTRETIEN,Maintenance préventive,2025-06-10,divers,Maintenance,EXP202500075,paid
+76,Power BI Pro,19498.08,SUITE_LOGICIELLE,Base données projets clients,2025-06-22,annuel,Licences_Logicielles,EXP202500076,paid
+77,Base de données Oracle,10578.82,LICENCE_ENTREPRISE,Licence serveur IT,2024-11-18,annuel,Licences_Logicielles,EXP202400077,paid
+78,Services Azure,1418.33,INFRA_SAAS,Sécurité des données,2025-07-22,mensuel,Services_Cloud,EXP202500078,paid
+79,Abonnement Internet,962.68,TÉLÉCOM,Facture électricité bureau Casablanca,2025-01-09,mensuel,Services_Publiques,EXP202500079,paid
+80,Licence Salesforce,11607.09,LICENCE_ENTREPRISE,Outils décisionnels,2024-12-16,annuel,Licences_Logicielles,EXP202400080,paid
+81,Matériel d’impression,4863.88,INVESTISSEMENT_INFRA,Mobilier ergonomique,2025-02-20,annuel,Équipement,EXP202500081,paid
+82,Dîner client,1905.98,ACTIVITÉ_EQUIPE,Événement interne trimestriel,2025-05-06,divers,Divertissement,EXP202500082,paid
+83,Base de données Oracle,13507.42,SUITE_LOGICIELLE,Base données projets clients,2024-09-12,annuel,Licences_Logicielles,EXP202400083,paid
+84,Facture eau,1111.66,FRAIS_BUREAU,Frais climatisation et chauffage,2024-10-18,mensuel,Services_Publiques,EXP202400084,paid
+85,Licence Salesforce,5605.89,PLATEFORME_TECHNIQUE,Base données projets clients,2025-06-26,trimestriel,Licences_Logicielles,EXP202500085,paid
+86,Outil Performance,1153.97,LOGICIEL_RH,Formation continue en ligne,2025-01-01,mensuel,Outils_RH,EXP202500086,paid
+87,Mise en conformité RGPD,3865.5,PROGRAMME_CONFORMITÉ,Audit conformité RGPD,2025-06-27,annuel,Juridique_Conformité,EXP202500087,paid
+88,Transfert international,150.03,FRAIS_BANQUE,Frais de compte,2025-04-04,mensuel,Frais_Bancaires,EXP202500088,paid
+89,Chauffage bureau,294.95,TÉLÉCOM,Téléphonie équipe interne,2025-04-28,mensuel,Services_Publiques,EXP202500089,paid
+90,Écran de travail,6622.18,INVESTISSEMENT_INFRA,Mobilier ergonomique,2024-09-08,annuel,Équipement,EXP202400090,paid
+91,Service bancaire,354.2,FRAIS_BANQUE,Commission transfert,2024-12-11,mensuel,Frais_Bancaires,EXP202400091,paid
+92,GitHub Entreprise,186.47,PLATEFORME_SAAS,Suite créative marketing,2025-03-27,mensuel,Abonnements,EXP202500092,paid
+93,Service bancaire,315.35,FRAIS_BANQUE,Change devises,2024-10-13,mensuel,Frais_Bancaires,EXP202400093,paid
+94,Location de voiture,1399.61,CONFÉRENCE_PRO,Formation externe hors site,2024-11-16,divers,Déplacements,EXP202400094,paid
+95,Licence Windows Server,8794.85,SUITE_LOGICIELLE,Licence serveur IT,2024-12-21,annuel,Licences_Logicielles,EXP202400095,unpaid
+96,Workday,155.39,LOGICIEL_RH,Système RH intégré,2025-02-06,mensuel,Outils_RH,EXP202500096,paid
+97,Voyage d’affaires,3744.87,CONFÉRENCE_PRO,Formation/conférence,2025-01-14,divers,Déplacements,EXP202500097,paid
+98,Location de voiture,7098.89,CONFÉRENCE_PRO,Formation externe hors site,2025-01-04,divers,Déplacements,EXP202500098,paid
+99,Licence Salesforce,17238.83,SUITE_LOGICIELLE,Outils décisionnels,2024-10-19,annuel,Licences_Logicielles,EXP202400099,paid
+100,Services Azure,1571.52,HÉBERGEMENT_CLOUD,Développement agile,2025-01-01,mensuel,Services_Cloud,EXP202500100,paid
+101,Licence Windows Server,2581.15,PLATEFORME_TECHNIQUE,CRM pour suivi ventes,2024-09-15,trimestriel,Licences_Logicielles,EXP202400101,paid
+102,BambooHR,516.88,LOGICIEL_RH,Outil évaluation performance,2025-05-17,mensuel,Outils_RH,EXP202500102,paid
+103,Marketing Facebook,2402.64,FORFAIT_SEO,Campagne publicitaire en ligne,2025-02-11,trimestriel,Marketing,EXP202500103,paid
+104,Papeterie,190.33,MATÉRIEL_BUREAU,Snacks et café,2025-03-11,divers,Fournitures_Bureau,EXP202500104,paid
+105,Frais de change,716.72,FRAIS_BANQUE,Services carte entreprise,2025-04-09,mensuel,Frais_Bancaires,EXP202500105,paid
+106,Frais tenue de compte,791.28,FRAIS_BANQUE,Frais de compte,2025-06-05,mensuel,Frais_Bancaires,EXP202500106,paid
+107,Cloudflare,1764.48,INFRA_SAAS,Sécurité des données,2025-03-23,mensuel,Services_Cloud,EXP202500107,unpaid
+108,Transfert international,723.11,FRAIS_BANQUE,Commission transfert,2025-04-19,mensuel,Frais_Bancaires,EXP202500108,paid
+109,Frais de transaction,666.43,FRAIS_BANQUE,Change devises,2024-10-25,mensuel,Frais_Bancaires,EXP202400109,paid
+110,Équipement réseau,1711.6,ACHAT_ÉQUIPEMENT,Infrastructure réseau,2024-08-25,divers,Équipement,EXP202400110,paid
+111,Chauffage bureau,834.17,TÉLÉCOM,Frais climatisation et chauffage,2024-08-14,mensuel,Services_Publiques,EXP202400111,paid
+112,Google Cloud Platform,1089.96,INFRA_SAAS,Cloud computing développement produit,2024-08-13,mensuel,Services_Cloud,EXP202400112,paid
+113,Licence SAP,6613.15,PLATEFORME_TECHNIQUE,Licence serveur IT,2024-12-30,trimestriel,Licences_Logicielles,EXP202400113,paid
+114,Adobe Creative Cloud,602.89,OUTILS_NUMÉRIQUES,Licences utilisateurs productivité,2024-08-17,mensuel,Abonnements,EXP202400114,paid
+115,Frais de transaction,165.21,FRAIS_BANQUE,Services carte entreprise,2024-12-24,mensuel,Frais_Bancaires,EXP202400115,paid
+116,Audit de conformité,3372.32,AUDIT_CONFORMITÉ,Revue gouvernance,2024-11-14,trimestriel,Juridique_Conformité,EXP202400116,paid
+117,Assurance bureau,10758.38,COUVERTURE_PRO,Assurance bureau,2025-05-19,annuel,Assurances,EXP202500117,paid
+118,Facture électricité,1371.21,SERVICES_UTILITAIRES,Facture électricité bureau Casablanca,2025-03-04,mensuel,Services_Publiques,EXP202500118,paid
+119,Licence Salesforce,5015.1,LOGICIEL_PRO,Licence serveur IT,2024-08-09,trimestriel,Licences_Logicielles,EXP202400119,paid
+120,Facture eau,935.21,SERVICES_UTILITAIRES,Frais climatisation et chauffage,2025-07-11,mensuel,Services_Publiques,EXP202500120,paid
+121,Chaise ergonomique,5450.44,INVESTISSEMENT_INFRA,Mobilier ergonomique,2024-11-05,annuel,Équipement,EXP202400121,paid
+122,Google Cloud Platform,1361.78,HÉBERGEMENT_CLOUD,Cloud computing développement produit,2025-03-18,mensuel,Services_Cloud,EXP202500122,unpaid
+123,Achat ordinateur,6165.97,INVESTISSEMENT_INFRA,Mobilier ergonomique,2025-06-18,annuel,Équipement,EXP202500123,paid
+124,Adobe Creative Cloud,545.55,OUTILS_NUMÉRIQUES,Outil vidéo pour réunions clients,2024-12-04,mensuel,Abonnements,EXP202400124,paid
+125,Power BI Pro,19055.81,SUITE_LOGICIELLE,CRM pour suivi ventes,2024-12-15,annuel,Licences_Logicielles,EXP202400125,paid
+126,Outil Performance,197.72,OUTILS_RECRUTEMENT,Système RH intégré,2025-01-10,mensuel,Outils_RH,EXP202500126,paid
+127,Chauffage bureau,756.93,TÉLÉCOM,Facture électricité bureau Casablanca,2024-10-20,mensuel,Services_Publiques,EXP202400127,paid
+128,Facture électricité,926.35,SERVICES_UTILITAIRES,Frais climatisation et chauffage,2024-10-30,mensuel,Services_Publiques,EXP202400128,paid
+129,Google Cloud Platform,1811.16,INFRA_SAAS,Hébergement scalable,2024-09-04,mensuel,Services_Cloud,EXP202400129,paid
+130,Base de données Oracle,2741.06,LOGICIEL_PRO,Licence serveur IT,2025-02-10,trimestriel,Licences_Logicielles,EXP202500130,unpaid
+131,Consultation juridique,9105.91,PROGRAMME_CONFORMITÉ,Revue gouvernance,2025-03-07,annuel,Juridique_Conformité,EXP202500131,paid
+132,Zoom Pro,502.09,PLATEFORME_SAAS,Plateforme collaborative équipes à distance,2024-10-25,mensuel,Abonnements,EXP202400132,paid
+133,Produits de nettoyage,527.03,MATÉRIEL_BUREAU,Accessoires de bureau,2024-09-07,divers,Fournitures_Bureau,EXP202400133,paid
+134,Équipement réseau,1326.84,INVESTISSEMENT_INFRA,Mobilier ergonomique,2024-11-28,annuel,Équipement,EXP202400134,paid
+135,Équipement réseau,1165.37,ACHAT_ÉQUIPEMENT,Renouvellement matériel IT,2024-10-25,divers,Équipement,EXP202400135,paid
+136,Mise à niveau système,2699.52,CONTRAT_ENTRETIEN,Réparation équipement,2024-10-06,divers,Maintenance,EXP202400136,unpaid
+137,Licence Salesforce,7371.47,LICENCE_ENTREPRISE,Outils décisionnels,2024-12-09,annuel,Licences_Logicielles,EXP202400137,paid
+138,Fête d’entreprise,1134.32,ÉVÉNEMENT_ENTREPRISE,Dîner client pour opportunité commerciale,2025-03-16,divers,Divertissement,EXP202500138,paid
+139,Chaise ergonomique,4009.76,INVESTISSEMENT_INFRA,Renouvellement matériel IT,2025-03-27,annuel,Équipement,EXP202500139,paid
+140,Cloudflare,1632.47,HÉBERGEMENT_CLOUD,Développement agile,2025-06-17,mensuel,Services_Cloud,EXP202500140,paid
+141,LinkedIn Recruiter,621.82,LOGICIEL_RH,Plateforme recrutement,2025-07-09,mensuel,Outils_RH,EXP202500141,paid
+142,Assurance bureau,5355.99,COUVERTURE_PRO,Assurance bureau,2025-07-06,annuel,Assurances,EXP202500142,paid
+143,Google Cloud Platform,645.83,HÉBERGEMENT_CLOUD,Cloud computing développement produit,2025-05-08,mensuel,Services_Cloud,EXP202500143,paid
+144,Matériel d’impression,2719.95,INVESTISSEMENT_INFRA,Écrans HD,2024-07-28,annuel,Équipement,EXP202400144,paid
+145,Cloudflare,1126.94,INFRA_SAAS,Cloud computing développement produit,2025-04-08,mensuel,Services_Cloud,EXP202500145,paid
+146,Conseil RH,3025.37,AVIS_PRO,Audit organisationnel,2025-07-28,divers,Conseil,EXP202500146,paid
+147,BambooHR,392.17,OUTILS_RECRUTEMENT,Outil évaluation performance,2025-04-06,mensuel,Outils_RH,EXP202500147,paid
+148,Licence Windows Server,6450.35,SUITE_LOGICIELLE,Base données projets clients,2025-06-08,annuel,Licences_Logicielles,EXP202500148,paid
+149,Téléphonie entreprise,581.94,SERVICES_UTILITAIRES,Facture électricité bureau Casablanca,2024-10-04,mensuel,Services_Publiques,EXP202400149,paid
+150,Slack Premium,683.86,OUTILS_NUMÉRIQUES,Suite créative marketing,2025-01-27,mensuel,Abonnements,EXP202500150,paid
+151,Consultation juridique,5148.7,PROGRAMME_CONFORMITÉ,Audit conformité RGPD,2025-05-10,annuel,Juridique_Conformité,EXP202500151,paid
+152,Zoom Pro,448.85,OUTILS_NUMÉRIQUES,Plateforme collaborative équipes à distance,2024-08-26,mensuel,Abonnements,EXP202400152,unpaid
+153,Écran de travail,5026.48,INVESTISSEMENT_INFRA,Infrastructure réseau,2024-11-19,annuel,Équipement,EXP202400153,paid
+154,Conseil informatique,8216.79,AVIS_PRO,Conseil stratégique,2025-02-18,divers,Conseil,EXP202500154,paid
+155,Hébergement AWS,1162.53,HÉBERGEMENT_CLOUD,Hébergement scalable,2025-03-04,mensuel,Services_Cloud,EXP202500155,paid
+156,Workday,665.67,LOGICIEL_RH,Outil évaluation performance,2025-03-20,mensuel,Outils_RH,EXP202500156,paid
+157,Cloudflare,441.09,INFRA_SAAS,Hébergement scalable,2024-10-02,mensuel,Services_Cloud,EXP202400157,paid
+158,Chaise ergonomique,3854.82,INVESTISSEMENT_INFRA,Renouvellement matériel IT,2025-03-04,annuel,Équipement,EXP202500158,paid
+159,Power BI Pro,16751.22,LICENCE_ENTREPRISE,Licence serveur IT,2024-12-04,annuel,Licences_Logicielles,EXP202400159,paid
+160,Assurance bureau,13719.09,COUVERTURE_PRO,Assurance bureau,2024-11-09,annuel,Assurances,EXP202400160,paid
+161,Microsoft 365,310.65,OUTILS_NUMÉRIQUES,Suite créative marketing,2025-02-14,mensuel,Abonnements,EXP202500161,paid
+162,Consultation juridique,11612.9,PROGRAMME_CONFORMITÉ,Appui réglementaire,2025-04-06,annuel,Juridique_Conformité,EXP202500162,paid
+163,Développement compétences,538.36,ATELIER,Cours en ligne,2025-07-01,trimestriel,Formations,EXP202500163,paid
+164,Consultation juridique,3443.12,AUDIT_CONFORMITÉ,Appui réglementaire,2025-02-12,trimestriel,Juridique_Conformité,EXP202500164,paid
+165,Mise en conformité RGPD,10882.91,PROGRAMME_CONFORMITÉ,Appui réglementaire,2025-05-03,annuel,Juridique_Conformité,EXP202500165,paid
+166,Outil Performance,876.72,OUTILS_RECRUTEMENT,Formation continue en ligne,2025-05-11,mensuel,Outils_RH,EXP202500166,paid
+167,Formation technique,1526.42,CERTIFICATION,Atelier management,2024-11-19,trimestriel,Formations,EXP202400167,paid
+168,Adobe Creative Cloud,275.06,PLATEFORME_SAAS,Licences utilisateurs productivité,2024-09-28,mensuel,Abonnements,EXP202400168,paid
+169,Équipement réseau,6322.85,INVESTISSEMENT_INFRA,Infrastructure réseau,2025-03-08,annuel,Équipement,EXP202500169,paid
+170,Assurance bureau,5648.3,COUVERTURE_PRO,Responsabilité civile,2025-01-08,annuel,Assurances,EXP202500170,paid
+171,Révision contrat,11987.51,PROGRAMME_CONFORMITÉ,Audit conformité RGPD,2025-06-26,annuel,Juridique_Conformité,EXP202500171,paid
+172,Hébergement AWS,540.04,HÉBERGEMENT_CLOUD,Développement agile,2024-08-18,mensuel,Services_Cloud,EXP202400172,paid
+173,Service bancaire,645.9,FRAIS_BANQUE,Services carte entreprise,2024-11-04,mensuel,Frais_Bancaires,EXP202400173,paid
+174,Billets d’avion,1362.75,CONFÉRENCE_PRO,Visite client,2024-09-09,divers,Déplacements,EXP202400174,paid
+175,Frais de change,545.2,FRAIS_BANQUE,Services carte entreprise,2025-07-11,mensuel,Frais_Bancaires,EXP202500175,paid
+176,Achat ordinateur,1403.26,INVESTISSEMENT_INFRA,Écrans HD,2024-10-22,annuel,Équipement,EXP202400176,paid
+177,Frais tenue de compte,488.19,FRAIS_BANQUE,Frais de compte,2025-05-13,mensuel,Frais_Bancaires,EXP202500177,paid
+178,Téléphonie entreprise,245.87,SERVICES_UTILITAIRES,Internet professionnel haut débit,2024-09-17,mensuel,Services_Publiques,EXP202400178,paid
+179,Base de données Oracle,4728.26,LICENCE_ENTREPRISE,Base données projets clients,2024-11-25,annuel,Licences_Logicielles,EXP202400179,paid
+180,Mutuelle santé,10670.85,COUVERTURE_PRO,Responsabilité civile,2025-02-27,annuel,Assurances,EXP202500180,paid
+181,Création de contenu,2671.89,CAMPAGNE_PUB,SEO visibilité web,2025-03-11,trimestriel,Marketing,EXP202500181,paid
+182,Outil Performance,567.99,LOGICIEL_RH,Plateforme recrutement,2025-04-11,mensuel,Outils_RH,EXP202500182,paid
+183,Frais de transaction,309.32,FRAIS_BANQUE,Services carte entreprise,2025-04-23,mensuel,Frais_Bancaires,EXP202500183,paid
+184,Microsoft 365,662.51,ABONNEMENT_LOGICIEL,Outil vidéo pour réunions clients,2025-04-20,mensuel,Abonnements,EXP202500184,paid
+185,Cloudflare,465.02,HÉBERGEMENT_CLOUD,Cloud computing développement produit,2025-04-19,mensuel,Services_Cloud,EXP202500185,unpaid
+186,Téléphonie entreprise,295.82,TÉLÉCOM,Frais climatisation et chauffage,2025-07-17,mensuel,Services_Publiques,EXP202500186,paid
+187,Workday,782.25,OUTILS_RECRUTEMENT,Système RH intégré,2025-07-28,mensuel,Outils_RH,EXP202500187,paid
+188,Assurance cybersécurité,9179.17,COUVERTURE_PRO,Assurance bureau,2024-09-25,annuel,Assurances,EXP202400188,unpaid
+189,Services Azure,298.39,HÉBERGEMENT_CLOUD,Développement agile,2024-10-04,mensuel,Services_Cloud,EXP202400189,paid
+190,Consultation juridique,3689.42,AUDIT_CONFORMITÉ,Appui réglementaire,2025-07-24,trimestriel,Juridique_Conformité,EXP202500190,paid
+191,Service bancaire,847.85,FRAIS_BANQUE,Change devises,2024-10-29,mensuel,Frais_Bancaires,EXP202400191,paid
+192,Services Azure,631.2,HÉBERGEMENT_CLOUD,Hébergement scalable,2024-10-23,mensuel,Services_Cloud,EXP202400192,paid
+193,Mutuelle santé,4723.62,COUVERTURE_PRO,Protection juridique,2025-01-24,annuel,Assurances,EXP202500193,paid
+194,Chauffage bureau,1056.64,FRAIS_BUREAU,Téléphonie équipe interne,2025-04-05,mensuel,Services_Publiques,EXP202500194,unpaid
+195,Cloudflare,1396.76,INFRA_SAAS,Sécurité des données,2024-08-15,mensuel,Services_Cloud,EXP202400195,paid
+196,Cours en ligne,1345.68,ATELIER,Cours en ligne,2025-04-21,trimestriel,Formations,EXP202500196,unpaid
+197,Licence Salesforce,17252.43,LICENCE_ENTREPRISE,Outils décisionnels,2024-10-21,annuel,Licences_Logicielles,EXP202400197,paid
+198,Écran de travail,6363.83,INVESTISSEMENT_INFRA,Mobilier ergonomique,2025-06-14,annuel,Équipement,EXP202500198,paid
+199,Frais de change,337.73,FRAIS_BANQUE,Services carte entreprise,2025-07-12,mensuel,Frais_Bancaires,EXP202500199,paid
+200,Matériel d’impression,3317.47,ACHAT_ÉQUIPEMENT,Écrans HD,2025-04-21,divers,Équipement,EXP202500200,paid
+201,Cloudflare,922.52,HÉBERGEMENT_CLOUD,Hébergement scalable,2024-08-07,mensuel,Services_Cloud,EXP202400201,paid
+202,Création de contenu,3275.47,FORFAIT_SEO,Campagne publicitaire en ligne,2025-06-22,trimestriel,Marketing,EXP202500202,paid
+203,GitHub Entreprise,89.91,ABONNEMENT_LOGICIEL,Suite créative marketing,2025-03-29,mensuel,Abonnements,EXP202500203,paid
+204,Power BI Pro,14942.64,LICENCE_ENTREPRISE,Outils décisionnels,2024-08-10,annuel,Licences_Logicielles,EXP202400204,paid
+205,Slack Premium,160.35,OUTILS_NUMÉRIQUES,Plateforme collaborative équipes à distance,2024-10-30,mensuel,Abonnements,EXP202400205,paid
+206,Assurance cybersécurité,7626.51,COUVERTURE_PRO,Assurance bureau,2024-09-18,annuel,Assurances,EXP202400206,paid
+207,Frais de change,268.58,FRAIS_BANQUE,Change devises,2025-02-24,mensuel,Frais_Bancaires,EXP202500207,paid
+208,Consultation juridique,8031.12,PROGRAMME_CONFORMITÉ,Audit conformité RGPD,2025-07-25,annuel,Juridique_Conformité,EXP202500208,paid
+209,Microsoft 365,334.81,ABONNEMENT_LOGICIEL,Outil vidéo pour réunions clients,2024-08-20,mensuel,Abonnements,EXP202400209,paid
+210,Logiciel ATS,852.58,OUTILS_RECRUTEMENT,Outil évaluation performance,2024-10-07,mensuel,Outils_RH,EXP202400210,paid
+211,Équipement réseau,4640.04,INVESTISSEMENT_INFRA,Écrans HD,2025-02-04,annuel,Équipement,EXP202500211,paid
+212,Consultation juridique,1587.9,AUDIT_CONFORMITÉ,Appui réglementaire,2024-09-15,trimestriel,Juridique_Conformité,EXP202400212,paid
+213,Service bancaire,854.63,FRAIS_BANQUE,Commission transfert,2024-12-21,mensuel,Frais_Bancaires,EXP202400213,paid
+214,DigitalOcean,875.54,HÉBERGEMENT_CLOUD,Sécurité des données,2025-04-20,mensuel,Services_Cloud,EXP202500214,paid
+215,Conseil RH,6036.51,AVIS_PRO,Conseil stratégique,2024-12-09,divers,Conseil,EXP202400215,paid
+216,Audit de conformité,9109.9,PROGRAMME_CONFORMITÉ,Revue gouvernance,2024-09-08,annuel,Juridique_Conformité,EXP202400216,paid
+217,Développement compétences,1530.65,CERTIFICATION,Certification IT,2025-07-23,trimestriel,Formations,EXP202500217,paid
+218,Licence Salesforce,1749.9,PLATEFORME_TECHNIQUE,Outils décisionnels,2024-12-19,trimestriel,Licences_Logicielles,EXP202400218,paid
+219,Facture eau,295.56,FRAIS_BUREAU,Téléphonie équipe interne,2024-10-06,mensuel,Services_Publiques,EXP202400219,paid
+220,BambooHR,489.76,LOGICIEL_RH,Plateforme recrutement,2025-06-16,mensuel,Outils_RH,EXP202500220,paid
+221,Service bancaire,334.08,FRAIS_BANQUE,Change devises,2025-03-18,mensuel,Frais_Bancaires,EXP202500221,paid
+222,Assurance véhicule,9174.46,COUVERTURE_PRO,Assurance bureau,2025-07-22,annuel,Assurances,EXP202500222,paid
+223,Assurance véhicule,2167.8,COUVERTURE_PRO,Cyber-risque,2024-12-07,annuel,Assurances,EXP202400223,paid
+224,Transfert international,562.96,FRAIS_BANQUE,Frais de compte,2024-11-09,mensuel,Frais_Bancaires,EXP202400224,paid
+225,Mutuelle santé,4526.78,COUVERTURE_PRO,Responsabilité civile,2025-07-17,annuel,Assurances,EXP202500225,paid
+226,Achat ordinateur,1432.14,ACHAT_ÉQUIPEMENT,Écrans HD,2024-10-20,divers,Équipement,EXP202400226,paid
+227,BambooHR,567.89,OUTILS_RECRUTEMENT,Formation continue en ligne,2024-08-31,mensuel,Outils_RH,EXP202400227,paid
+228,Assurance bureau,9806.78,COUVERTURE_PRO,Assurance bureau,2025-02-19,annuel,Assurances,EXP202500228,paid
+229,Facture électricité,1236.21,SERVICES_UTILITAIRES,Internet professionnel haut débit,2024-10-06,mensuel,Services_Publiques,EXP202400229,paid
+230,Hébergement AWS,1588.86,INFRA_SAAS,Hébergement scalable,2025-06-24,mensuel,Services_Cloud,EXP202500230,paid
+231,Licence SAP,5511.73,PLATEFORME_TECHNIQUE,Base données projets clients,2024-11-30,trimestriel,Licences_Logicielles,EXP202400231,paid
+232,Base de données Oracle,3347.87,LICENCE_ENTREPRISE,CRM pour suivi ventes,2024-10-10,annuel,Licences_Logicielles,EXP202400232,paid
+233,Frais tenue de compte,284.67,FRAIS_BANQUE,Change devises,2025-01-08,mensuel,Frais_Bancaires,EXP202500233,paid
+234,Chauffage bureau,1068.02,SERVICES_UTILITAIRES,Facture électricité bureau Casablanca,2024-12-04,mensuel,Services_Publiques,EXP202400234,paid
+235,Licence Salesforce,4939.53,PLATEFORME_TECHNIQUE,CRM pour suivi ventes,2025-01-04,trimestriel,Licences_Logicielles,EXP202500235,paid
+236,Assurance responsabilité,3877.58,COUVERTURE_PRO,Responsabilité civile,2024-12-11,annuel,Assurances,EXP202400236,paid
+237,DigitalOcean,1756.95,HÉBERGEMENT_CLOUD,Développement agile,2025-03-10,mensuel,Services_Cloud,EXP202500237,paid
+238,Cloudflare,582.22,HÉBERGEMENT_CLOUD,Sécurité des données,2025-04-10,mensuel,Services_Cloud,EXP202500238,paid
+239,Microsoft 365,331.32,OUTILS_NUMÉRIQUES,Outil vidéo pour réunions clients,2025-04-04,mensuel,Abonnements,EXP202500239,paid
+240,Consultation juridique,3610.59,AUDIT_CONFORMITÉ,Conseil contrats,2024-10-07,trimestriel,Juridique_Conformité,EXP202400240,paid
+241,Assurance cybersécurité,14729.12,COUVERTURE_PRO,Protection juridique,2025-03-11,annuel,Assurances,EXP202500241,paid
+242,Cours en ligne,1213.74,ATELIER,Atelier management,2024-11-08,trimestriel,Formations,EXP202400242,paid
+243,Cours en ligne,1232.63,CERTIFICATION,Cours en ligne,2025-04-16,trimestriel,Formations,EXP202500243,paid
+244,Base de données Oracle,14511.63,LICENCE_ENTREPRISE,Outils décisionnels,2024-11-24,annuel,Licences_Logicielles,EXP202400244,unpaid
+245,Google Ads,1726.13,CAMPAGNE_PUB,SEO visibilité web,2025-03-18,trimestriel,Marketing,EXP202500245,paid
+246,GitHub Entreprise,328.58,ABONNEMENT_LOGICIEL,Plateforme collaborative équipes à distance,2025-03-24,mensuel,Abonnements,EXP202500246,paid
+247,Facture électricité,882.32,TÉLÉCOM,Facture électricité bureau Casablanca,2025-03-14,mensuel,Services_Publiques,EXP202500247,paid
+248,Frais de transaction,335.24,FRAIS_BANQUE,Change devises,2024-09-01,mensuel,Frais_Bancaires,EXP202400248,paid
+249,Célébration annuelle,1520.24,ACTIVITÉ_EQUIPE,Événement interne trimestriel,2024-11-18,divers,Divertissement,EXP202400249,paid
+250,Frais de change,861.06,FRAIS_BANQUE,Frais de compte,2025-02-02,mensuel,Frais_Bancaires,EXP202500250,paid

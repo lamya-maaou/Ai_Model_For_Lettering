@@ -1,0 +1,66 @@
+RAPPORT DE SYNTHÈSE - DATASET COMPTABLE SYNTHÉTIQUE ORACLE
+============================================================
+
+Compatible avec le schéma Oracle DB
+
+CLIENTS (800 total):
+  - Publics: 390
+  - Privés: 410
+
+FACTURES (4759 total):
+  - UNPAID: 691
+  - PAID: 3584
+  - SENT: 76
+  - PARTIAL: 151
+  - OVERDUE: 257
+  - Montant total HT: 23,508,092.94 €
+  - Montant total TTC: 27,172,731.12 €
+  - Montant total à payer: 24,923,520.71 €
+
+RELEVES BANCAIRES (6535 total):
+  - Liés à des factures: 3735
+  - Liés à des dépenses: 2000
+  - Orphelins: 800
+  - Total crédits: 19,473,830.67 €
+  - Total débits: 166,769.67 €
+
+DEPENSES (5000 total):
+  - Montant total: 376,828.03 €
+  - Par statut:
+    - paid: 3464
+    - unpaid: 1536
+  - Par catégorie:
+    - Maintenance: 256
+    - Frais bancaires: 275
+    - Formation: 259
+    - R&D: 256
+    - Logiciels: 262
+    - Services publics: 274
+    - Hébergement: 286
+    - Loyer: 278
+    - Marketing: 233
+    - Fournitures bureau: 258
+    - Frais de représentation: 268
+    - Assurances: 259
+    - Frais professionnels: 289
+    - Transport: 277
+    - Communication: 248
+    - Restauration: 241
+    - Matériel informatique: 255
+    - Déplacements: 260
+    - Abonnements: 266
+  - Par type:
+    - food: 452
+    - office: 399
+    - other: 373
+    - lodging: 382
+    - maintenance: 422
+    - marketing: 404
+    - professional: 427
+    - subscription: 445
+    - equipment: 398
+    - software: 441
+    - research: 422
+    - travel: 435
+
+FIN DU RAPPORT
