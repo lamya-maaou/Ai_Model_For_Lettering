@@ -57,18 +57,40 @@ python train.py
 
 ## Modèles Implémentés
 
-1. **Forêt Aléatoire (Random Forest)**
-   - Implémentation complète avec optimisation des hyperparamètres
-   - Fonctionnalités de prétraitement des données
-   - Évaluation des performances
+### 1. Forêt Aléatoire (Random Forest)
+- **Type** : Modèle d'ensemble basé sur les arbres de décision
+- **Caractéristiques** :
+  - Optimisation des hyperparamètres
+  - Prétraitement avancé des données
+  - Évaluation complète des performances
+  - Gestion du sur-apprentissage
+- **Fichiers clés** : `RandomForestModel/notebooks/02_Modele_RandomForest.ipynb`
 
-2. **K-plus proches voisins (KNN)**
-   - Classification basée sur la similarité
-   - Optimisation du nombre de voisins
+### 2. K-plus proches voisins (KNN)
+- **Type** : Algorithme d'apprentissage supervisé basé sur la similarité
+- **Caractéristiques** :
+  - Optimisation du nombre de voisins (k)
+  - Mise à l'échelle des caractéristiques
+  - Matrice de confusion et métriques d'évaluation
+- **Fichiers clés** : `KNNModel/notebooks/01_modele_knn_lettrage.ipynb`
 
-3. **Naive Bayes Gaussien**
-   - Modèle probabiliste simple et efficace
-   - Entraînement rapide sur de grands jeux de données
+### 3. Naive Bayes Gaussien
+- **Type** : Classificateur probabiliste
+- **Caractéristiques** :
+  - Hypothèse d'indépendance des caractéristiques
+  - Entraînement rapide
+  - Efficace sur grands jeux de données
+
+### 4. Modèles Additionnels (OtherModels/)
+- **Gradient Boosting** : `GradientGboost_model.pkl`
+- **LightGBM** : `LightGBM_model.pkl`
+- **Régression Logistique** : `Logestic_Regression_model.pkl`
+- **SVM (Machines à Vecteurs de Support)** : `SVM_model.pkl`
+- **XGBoost** : `xgb_model.pkl`
+
+### 5. Modèles d'Ensemble
+- Combinaison de plusieurs modèles pour améliorer les prédictions
+- Approches de vote et de pondération
 
 ## 📝 Notes
 
