@@ -1,5 +1,5 @@
 .git/
 .gitmodules
 
-**/.venv/
-**/_pycache_/
+**/.venv
+**/__pycache__/
