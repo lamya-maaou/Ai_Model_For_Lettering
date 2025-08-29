@@ -126,8 +126,8 @@ class PredictionRequest(BaseModel):
     confidence_threshold: Optional[float] = 0.5
 
 class MatchResult(BaseModel):
-    bank_id: str
-    operation_id: str
+    bank_id: int
+    operation_id: int
     match_type: str  # "debit-facture" ou "credit-depense"
     confidence: float
     prediction: int
