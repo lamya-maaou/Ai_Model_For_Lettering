@@ -128,18 +128,18 @@ class PredictionRequest(BaseModel):
 class MatchResult(BaseModel):
     bank_id: int
     operation_id: int
-    match_type: str  # "debit-facture" ou "credit-depense"
+    match_type: str  # "debit-depense" ou "credit-facture"
     confidence: float
     prediction: int
 
 class PredictionSummary(BaseModel):
-    total_debit_facture: int
-    total_credit_depense: int
+    total_debit_depense: int
+    total_credit_facture: int
     total_matches: int
 
 class PredictionResponse(BaseModel):
-    debit_facture: List[MatchResult]
-    credit_depense: List[MatchResult]
+    debit_depense: List[MatchResult]
+    credit_facture: List[MatchResult]
     summary: PredictionSummary
 
 # Liste des caractéristiques attendues par le modèle
@@ -345,8 +345,8 @@ async def predict(request: PredictionRequest):
       - Crédit <-> Dépenses
     """
     try:
-        debit_facture_matches = []
-        credit_depense_matches = []
+        debit_depense_matches = []
+        credit_facture_matches = []
 
         # Mapping
         debit_mapped = apply_column_mapping(request.debit, bank_columns_mapping, "bank")
@@ -366,7 +366,123 @@ async def predict(request: PredictionRequest):
             debit_id = debit_op.get('id_releve', 'unknown_debit')
             candidate_pairs = []
             candidate_features = []
+            for depense_op in depense_mapped:
+                depense_id = depense_op.get('id_operation', 'unknown_depense')
+                if depense_id in used_depenses:
+                    continue
 
+                features = build_features(credit_op, depense_op,ohe_path_dict,sentence_model)
+                candidate_features.append(features)
+                candidate_pairs.append({
+                    'bank_id': credit_id,
+                    'id_operation': depense_id,
+                    'match_type': 'credit-facture'
+                })
+
+            if candidate_pairs:
+                df_features = pd.DataFrame(candidate_features)[FEATURES]
+                df_features = scaler.transform(df_features)
+                predictions = lightgbm_model.predict(df_features)
+                # print(predictions)
+                probabilities = lightgbm_model.predict_proba(df_features)[:, 1]
+
+                best_idx, best_prob = None, -1
+                for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
+                    if pred == 1  and prob > best_prob:
+                        best_prob = prob
+                        best_idx = i
+
+                if best_idx is not None:
+                    pair = candidate_pairs[best_idx]
+                    debit_depense_matches.append(MatchResult(
+                        bank_id=pair['bank_id'],
+                        operation_id=pair['id_operation'],
+                        match_type=pair['match_type'],
+                        confidence=float(best_prob),
+                        prediction=1
+                    ))
+                    used_depenses.add(pair['id_operation'])
+
+            # for facture_op in facture_mapped:
+            #     facture_id = facture_op.get('id_operation', 'unknown_facture')
+            #     if facture_id in used_factures:
+            #         continue
+            #     features = build_features(debit_op, facture_op,ohe_path_dict,sentence_model)
+            #     candidate_features.append(features)
+            #     candidate_pairs.append({
+            #         'bank_id': debit_id,
+            #         'id_operation': facture_id,
+            #         'match_type': 'debit-facture'
+            #     })
+
+            # if candidate_pairs:
+            #     df_features = pd.DataFrame(candidate_features)[FEATURES]
+            #     print(df_features)
+            #     df_features = scaler.transform(df_features)
+            #     predictions = lightgbm_model.predict(df_features)
+            #     print(predictions)
+            #     probabilities = lightgbm_model.predict_proba(df_features)[:, 1]
+
+            #     best_idx, best_prob = None, -1
+            #     for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
+            #         if pred == 1 and  prob > best_prob:
+            #             best_prob = prob
+            #             best_idx = i
+
+            #     if best_idx is not None:
+            #         pair = candidate_pairs[best_idx]
+            #         debit_facture_matches.append(MatchResult(
+            #             bank_id=pair['bank_id'],
+            #             operation_id=pair['id_operation'],
+            #             match_type=pair['match_type'],
+            #             confidence=float(best_prob),
+            #             prediction=1
+            #         ))
+            #         used_factures.add(pair['id_operation'])
+
+        # ---------- Crédit <-> facture ----------
+        used_depenses = set()
+        for credit_op in credit_mapped:
+            credit_id = credit_op.get('id_releve', 'unknown_credit')
+            candidate_pairs = []
+            candidate_features = []
+
+            # for depense_op in depense_mapped:
+            #     depense_id = depense_op.get('id_operation', 'unknown_depense')
+            #     if depense_id in used_depenses:
+            #         continue
+
+            #     features = build_features(credit_op, depense_op,ohe_path_dict,sentence_model)
+            #     candidate_features.append(features)
+            #     candidate_pairs.append({
+            #         'bank_id': credit_id,
+            #         'id_operation': depense_id,
+            #         'match_type': 'credit-depense'
+            #     })
+
+            # if candidate_pairs:
+            #     df_features = pd.DataFrame(candidate_features)[FEATURES]
+            #     df_features = scaler.transform(df_features)
+            #     predictions = lightgbm_model.predict(df_features)
+            #     # print(predictions)
+            #     probabilities = lightgbm_model.predict_proba(df_features)[:, 1]
+
+            #     best_idx, best_prob = None, -1
+            #     for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
+            #         if pred == 1  and prob > best_prob:
+            #             best_prob = prob
+            #             best_idx = i
+
+            #     if best_idx is not None:
+            #         pair = candidate_pairs[best_idx]
+            #         credit_depense_matches.append(MatchResult(
+            #             bank_id=pair['bank_id'],
+            #             operation_id=pair['id_operation'],
+            #             match_type=pair['match_type'],
+            #             confidence=float(best_prob),
+            #             prediction=1
+            #         ))
+            #         used_depenses.add(pair['id_operation'])
             for facture_op in facture_mapped:
                 facture_id = facture_op.get('id_operation', 'unknown_facture')
                 if facture_id in used_factures:
@@ -376,7 +492,7 @@ async def predict(request: PredictionRequest):
                 candidate_pairs.append({
                     'bank_id': debit_id,
                     'id_operation': facture_id,
-                    'match_type': 'debit-facture'
+                    'match_type': 'debit-depense'
                 })
 
             if candidate_pairs:
@@ -395,7 +511,7 @@ async def predict(request: PredictionRequest):
 
                 if best_idx is not None:
                     pair = candidate_pairs[best_idx]
-                    debit_facture_matches.append(MatchResult(
+                    credit_facture_matches.append(MatchResult(
                         bank_id=pair['bank_id'],
                         operation_id=pair['id_operation'],
                         match_type=pair['match_type'],
@@ -404,61 +520,17 @@ async def predict(request: PredictionRequest):
                     ))
                     used_factures.add(pair['id_operation'])
 
-        # ---------- Crédit <-> Dépenses ----------
-        used_depenses = set()
-        for credit_op in credit_mapped:
-            credit_id = credit_op.get('id_releve', 'unknown_credit')
-            candidate_pairs = []
-            candidate_features = []
-
-            for depense_op in depense_mapped:
-                depense_id = depense_op.get('id_operation', 'unknown_depense')
-                if depense_id in used_depenses:
-                    continue
-
-                features = build_features(credit_op, depense_op,ohe_path_dict,sentence_model)
-                candidate_features.append(features)
-                candidate_pairs.append({
-                    'bank_id': credit_id,
-                    'id_operation': depense_id,
-                    'match_type': 'credit-depense'
-                })
-
-            if candidate_pairs:
-                df_features = pd.DataFrame(candidate_features)[FEATURES]
-                df_features = scaler.transform(df_features)
-                predictions = lightgbm_model.predict(df_features)
-                print(predictions)
-                probabilities = lightgbm_model.predict_proba(df_features)[:, 1]
-
-                best_idx, best_prob = None, -1
-                for i, (pred, prob) in enumerate(zip(predictions, probabilities)):
-                    if pred == 1  and prob > best_prob:
-                        best_prob = prob
-                        best_idx = i
-
-                if best_idx is not None:
-                    pair = candidate_pairs[best_idx]
-                    credit_depense_matches.append(MatchResult(
-                        bank_id=pair['bank_id'],
-                        operation_id=pair['id_operation'],
-                        match_type=pair['match_type'],
-                        confidence=float(best_prob),
-                        prediction=1
-                    ))
-                    used_depenses.add(pair['id_operation'])
-
         # Tri par confiance décroissante dans chaque liste
-        debit_facture_matches.sort(key=lambda x: x.confidence, reverse=True)
-        credit_depense_matches.sort(key=lambda x: x.confidence, reverse=True)
+        debit_depense_matches.sort(key=lambda x: x.confidence, reverse=True)
+        credit_facture_matches.sort(key=lambda x: x.confidence, reverse=True)
 
         return PredictionResponse(
-    debit_facture=debit_facture_matches,
-    credit_depense=credit_depense_matches,
+    debit_depense=debit_depense_matches,
+    credit_facture=credit_facture_matches,
     summary=PredictionSummary(
-        total_debit_facture=len(debit_facture_matches),
-        total_credit_depense=len(credit_depense_matches),
-        total_matches=len(debit_facture_matches) + len(credit_depense_matches)
+        total_debit_depense=len(debit_depense_matches),
+        total_credit_facture=len(credit_facture_matches),
+        total_matches=len(debit_depense_matches) + len(credit_facture_matches)
     )
 )
 
@@ -487,4 +559,4 @@ async def global_exception_handler(request, exc):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
