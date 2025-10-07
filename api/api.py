@@ -3,7 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import Dict, List, Optional, Any
-import joblib
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -341,8 +340,8 @@ async def health_check():
 async def predict(request: PredictionRequest):
     """
     Effectue le lettrage automatique en séparant clairement :
-      - Débit <-> Factures
-      - Crédit <-> Dépenses
+     - Débit <-> Dépenses 
+     - Crédit <-> Factures
     """
     try:
         debit_depense_matches = []
@@ -354,8 +353,8 @@ async def predict(request: PredictionRequest):
         facture_mapped = apply_column_mapping(request.facture, invoice_columns_mapping, "facture")
         depense_mapped = apply_column_mapping(request.depense, expense_columns_mapping, "depense")
 
-        # ---------- Débit <-> Factures ----------
-        used_factures = set()
+        # ---------- Débit <-> depenses ----------
+        used_depenses = set()
         # ohe_path_dict = {"categorie" :"C:/Ai_Model_For_Lettering/api/categorie_encoder.pkl","type_operation" :"C:/Ai_Model_For_Lettering/api/type_operation_encoder.pkl"}
         ohe_path_dict = {
     "categorie": BASE_DIR / "categorie_encoder.pkl",
@@ -371,12 +370,12 @@ async def predict(request: PredictionRequest):
                 if depense_id in used_depenses:
                     continue
 
-                features = build_features(credit_op, depense_op,ohe_path_dict,sentence_model)
+                features = build_features(debit_op, depense_op,ohe_path_dict,sentence_model)
                 candidate_features.append(features)
                 candidate_pairs.append({
-                    'bank_id': credit_id,
+                    'bank_id': debit_id,
                     'id_operation': depense_id,
-                    'match_type': 'credit-facture'
+                    'match_type': 'debit-depense'
                 })
 
             if candidate_pairs:
@@ -441,7 +440,7 @@ async def predict(request: PredictionRequest):
             #         used_factures.add(pair['id_operation'])
 
         # ---------- Crédit <-> facture ----------
-        used_depenses = set()
+        used_factures = set()
         for credit_op in credit_mapped:
             credit_id = credit_op.get('id_releve', 'unknown_credit')
             candidate_pairs = []
@@ -487,12 +486,12 @@ async def predict(request: PredictionRequest):
                 facture_id = facture_op.get('id_operation', 'unknown_facture')
                 if facture_id in used_factures:
                     continue
-                features = build_features(debit_op, facture_op,ohe_path_dict,sentence_model)
+                features = build_features(credit_op, facture_op,ohe_path_dict,sentence_model)
                 candidate_features.append(features)
                 candidate_pairs.append({
-                    'bank_id': debit_id,
+                    'bank_id': credit_id,
                     'id_operation': facture_id,
-                    'match_type': 'debit-depense'
+                    'match_type': 'credit-facture'
                 })
 
             if candidate_pairs:
